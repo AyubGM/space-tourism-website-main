@@ -1,0 +1,353 @@
+.tech{
+    background-image: url(./starter-code/assets/technology/background-technology-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 375px;
+    min-height: auto;
+    overflow-x: hidden;
+    
+}
+
+
+
+.tech__con{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+
+.tech__h{
+    font-size: var(--size-lg);
+    display: flex;
+    gap: 1rem;
+    text-transform: uppercase;
+    color: var(--clr-whiteH);
+    letter-spacing: 2.36px
+}
+
+.tech__h span{
+    color: hsl( var(--clr-white) / .5);
+}
+
+
+.tech__div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+   
+  
+   
+}
+
+.tech__img{
+    
+    
+    width: 100%;
+    height: 170px; 
+    min-width: 375px;
+    min-height: auto;
+    overflow: hidden;  
+    position: relative;
+}
+
+.Timg{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    top: -12rem;
+    width: 100%;
+    
+}
+
+
+.tech__list{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+
+}
+
+
+
+.tech__menu{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 2.36px;
+}
+
+
+.tech__btn{
+    border: 1px solid  hsl( var(--clr-white) / .3);
+    border-radius: 50%;
+    padding: 1em 1.5em;
+    text-align: center;
+  }
+  
+  .tech__btn span{
+   font-size: var(--size-xl);
+  }
+
+  .tech__btn[aria-selected="true"]{
+    background-color: var(--clr-whiteH);
+    color: var(--clr-darkH);
+
+  }
+
+
+  [data-tab-content]{
+    display: none;
+}
+
+
+
+.tech__info[data-tab-content]{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 6rem;
+}
+
+
+.tech__info h1{
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-whiteH) ;
+    font-size: var(--size-2xl);
+    text-transform: uppercase;
+    gap: 0.5rem;
+}
+
+.tech__info h1 > span{
+    color:  var(--clr-lightH);
+     font-size: var(--size-sm);
+     text-transform: uppercase;
+ }
+
+.tech__info p{
+    width: 39ch;
+    line-height: 25px;
+}
+
+
+
+/* md */
+ @media (min-width: 768px) {
+
+    .tech{
+        background-image: url(./starter-code/assets/technology/background-technology-tablet.jpg);
+    }
+    
+    
+    
+    .tech__con{
+        margin-top: 0.5rem;
+        gap: 3rem;
+    }
+
+ 
+    
+    
+    .tech__h{
+        font-size: var(--size-2xl);
+        gap: 1rem;
+        letter-spacing: 3.38px;
+        align-self: flex-start;
+        margin-left: 2rem;
+
+       
+        
+    }
+
+
+    .tech__div{
+        gap: 4rem;
+        width: 100%;
+        border: 0;
+        
+    }
+    
+    
+    
+    .tech__img{
+        height: 350px;
+      
+    }
+    
+    .Timg{
+        
+        top: -24rem;
+    }
+
+
+
+    .tech__list{
+        margin-top: 0.5rem;
+        gap: 3rem;
+    
+    }
+    
+    
+    .tech__menu{
+        font-size: var(--size-base);
+        gap: 1.5rem;
+        letter-spacing: 2.7px;
+    }
+      
+      .tech__btn span{
+       font-size: var(--size-3xl);
+      }
+    
+    
+    .tech__info{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 0;
+    }
+    
+   
+    
+    .tech__info h1{
+
+        font-size: var(--size-4xl);
+    
+    }
+    
+    .tech__info h1 > span{
+
+         font-size: var(--size-base);
+ 
+     }
+    
+    .tech__info p{
+        width: 51ch;
+        line-height: 28px;
+        font-size: var(--size-xl);
+        
+    }
+    
+    
+ } 
+
+ /* 2xl */
+ @media (min-width: 1440px) {
+    .tech{
+        background-image: url(./starter-code/assets/technology/background-technology-desktop.jpg);
+        
+    }
+    
+    
+    
+    .tech__con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr;
+        gap: 0;
+        column-gap: 6rem;
+    }
+
+ 
+    
+    .tech__h{
+        font-size: var(--size-4xl);
+        letter-spacing: 3.38px;
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 6rem;
+       
+        
+    }
+    
+    .tech__div{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     
+        grid-row: 2;
+        grid-column: 2;
+ 
+    }
+        
+    
+    .tech__img{
+        height: 595px;
+    }
+
+    .Timg{
+        top: 0;
+    }
+
+    .tech__list{
+        flex-direction: row;
+        align-items: start;
+        margin-top: 0.5rem;
+        gap: 3rem;
+        grid-row: 2;
+        margin-left: 6rem;
+    }
+    
+    
+    
+    .tech__menu{
+        flex-direction: column;
+        font-size: var(--size-2xl);
+        gap: 2rem;
+        letter-spacing: 2.7px;
+    }
+
+    .tech__btn span{
+        font-size: var(--size-4xl);
+       }
+    
+    
+    .tech__info{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 2rem;
+       
+        
+    }
+    
+    .tech__info h1{
+
+        font-size: var(--size-6xl);
+    
+    }
+    
+    .tech__info h1 > span{
+
+         font-size: var(--size-xl);
+ 
+     }
+    
+    .tech__info p{
+        text-align: start;
+        width: 44ch;
+        line-height: 32px;
+        font-size: var(--size-2xl);
+    }
+    
+    
+ } 
